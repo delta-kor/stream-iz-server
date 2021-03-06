@@ -1,4 +1,5 @@
 import Controller from '../../types/controller.class';
+import { Deserialize } from '../../types/deserialize.type';
 import AsyncHelper from '../../utils/async-helper.util';
 import DtoHelper from '../../utils/dto-helper.util';
 import { TypedRequest, TypedResponse } from '../../utils/express.type';
@@ -17,9 +18,9 @@ export default class AlbumController extends Controller {
 
   private async upload(
     req: TypedRequest<DtoHelper<UploadDto>>,
-    res: TypedResponse<Album>
+    res: TypedResponse<Deserialize<Album>>
   ): Promise<void> {
     const album = await this.albumService.upload(req.body);
-    res.json(album);
+    res.json(album.deserialize());
   }
 }
