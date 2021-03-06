@@ -13,7 +13,14 @@ export const AlbumSchema = new Schema<Album>({
 });
 
 AlbumSchema.method('deserialize', function (this: Album): Deserialize<Album> {
-  return this;
+  return {
+    uuid: this.uuid,
+    title: this.title,
+    label: this.label,
+    release: this.release.getTime(),
+    isKorean: this.isKorean,
+    isSingle: this.isSingle,
+  };
 });
 
 const AlbumModel = model('album', AlbumSchema);
