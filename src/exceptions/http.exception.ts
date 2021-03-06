@@ -1,5 +1,6 @@
 export enum ErrorCode {
   NOT_FOUND,
+  UNAUTHORIZED,
 }
 
 export default class HttpException extends Error {
