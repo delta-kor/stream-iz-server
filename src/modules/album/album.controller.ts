@@ -7,6 +7,7 @@ import ValidateHelper from '../../utils/validate-helper.util';
 import Album from './album.interface';
 import AlbumService from './album.service';
 import UploadDto from './dto/upload.dto';
+import ViewDto from './dto/view.dto';
 
 export default class AlbumController extends Controller {
   public path: string = '/album';
@@ -14,6 +15,7 @@ export default class AlbumController extends Controller {
 
   protected mountRoutes(): void {
     this.router.post('/upload', ValidateHelper(UploadDto), AsyncHelper(this.upload.bind(this)));
+    this.router.post('/view', ValidateHelper(ViewDto), AsyncHelper(this.view.bind(this)));
   }
 
   private async upload(
@@ -21,6 +23,14 @@ export default class AlbumController extends Controller {
     res: TypedResponse<Deserialize<Album>>
   ): Promise<void> {
     const album = await this.albumService.upload(req.body);
+    res.json(album.deserialize());
+  }
+
+  private async view(
+    req: TypedRequest<DtoHelper<ViewDto>>,
+    res: TypedResponse<Deserialize<Album>>
+  ): Promise<void> {
+    const album = await this.albumService.view(req.body.uuid);
     res.json(album.deserialize());
   }
 }

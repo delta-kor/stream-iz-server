@@ -1,7 +1,11 @@
-import { model, Schema } from 'mongoose';
+import { Model, model, Schema } from 'mongoose';
 import { Deserialize } from '../../types/deserialize.type';
 import uuid from '../../utils/uuid.util';
 import Album from './album.interface';
+
+export interface AlbumModel extends Model<Album> {
+  getAlbumByUUID(uuid: string): Promise<Album | null>;
+}
 
 export const AlbumSchema = new Schema<Album>({
   uuid: { type: String, required: true, unique: true, default: () => uuid(16) },
@@ -10,6 +14,10 @@ export const AlbumSchema = new Schema<Album>({
   release: { type: Date, required: true },
   isKorean: { type: Boolean, required: true },
   isSingle: { type: Boolean, required: true },
+});
+
+AlbumSchema.static('getAlbumByUUID', function (uuid: string): Promise<Album | null> {
+  return AlbumModel.findOne({ uuid }).exec();
 });
 
 AlbumSchema.method('deserialize', function (this: Album): Deserialize<Album> {
@@ -23,5 +31,5 @@ AlbumSchema.method('deserialize', function (this: Album): Deserialize<Album> {
   };
 });
 
-const AlbumModel = model('album', AlbumSchema);
+const AlbumModel = model<Album, AlbumModel>('album', AlbumSchema);
 export default AlbumModel;
