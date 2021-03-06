@@ -38,7 +38,7 @@ export default class App {
     this.app.use(json());
     this.app.use(
       session({
-        name: 'icarus',
+        name: 'iz_one',
         resave: true,
         secret: process.env.SECRET!,
         saveUninitialized: false,
