@@ -1,0 +1,11 @@
+{
+  "name": "stream-iz-server",
+  "version": "1.0.0",
+  "description": "STREAM*IZ backend server",
+  "main": "dist/server.js",
+  "repository": "https://github.com/delta-kor/stream-iz-server",
+  "author": "delta-kor <deltakbot1@gmail.com>",
+  "license": "MIT",
+  "keywords": ["nodejs", "node", "typescript", "express", "mongo", "mongoose", "stream-iz"],
+  "homepage": "http://lt2.kr/iz2"
+}
