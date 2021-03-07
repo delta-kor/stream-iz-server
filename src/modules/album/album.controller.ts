@@ -22,7 +22,7 @@ export default class AlbumController extends Controller {
       ValidateHelper(ViewDto),
       AsyncHelper(this.view.bind(this))
     );
-    this.router.post('/fetch', cache.middleware('24 hour'), AsyncHelper(this.fetch.bind(this)));
+    this.router.get('/fetch', cache.middleware('24 hour'), AsyncHelper(this.fetch.bind(this)));
   }
 
   private async upload(
