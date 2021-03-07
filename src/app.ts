@@ -1,4 +1,5 @@
 import MongoStore from 'connect-mongo';
+import cors from 'cors';
 import express, { Application, json, NextFunction, Request, Response } from 'express';
 import session from 'express-session';
 import mongoose from 'mongoose';
@@ -35,6 +36,7 @@ export default class App {
   }
 
   private mountMiddlewares(): void {
+    this.app.use(cors({ origin: 'http://lt2.kr' }));
     this.app.use(json());
     this.app.use(
       session({
