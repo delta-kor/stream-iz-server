@@ -1,3 +1,4 @@
+import cache from 'apicache';
 import Controller from '../../types/controller.class';
 import { Deserialize } from '../../types/deserialize.type';
 import AsyncHelper from '../../utils/async-helper.util';
@@ -15,8 +16,13 @@ export default class AlbumController extends Controller {
 
   protected mountRoutes(): void {
     this.router.post('/upload', ValidateHelper(UploadDto), AsyncHelper(this.upload.bind(this)));
-    this.router.post('/view', ValidateHelper(ViewDto), AsyncHelper(this.view.bind(this)));
-    this.router.post('/fetch', AsyncHelper(this.fetch.bind(this)));
+    this.router.post(
+      '/view',
+      cache.middleware('24 hour'),
+      ValidateHelper(ViewDto),
+      AsyncHelper(this.view.bind(this))
+    );
+    this.router.post('/fetch', cache.middleware('24 hour'), AsyncHelper(this.fetch.bind(this)));
   }
 
   private async upload(
