@@ -1,6 +1,9 @@
 import UnauthorizedException from '../../exceptions/unauthorized.exception';
+import { Deserialize } from '../../types/deserialize.type';
 import DtoHelper from '../../utils/dto-helper.util';
-import Album from './album.interface';
+import Music from '../music/music.interface';
+import MusicModel from '../music/music.model';
+import Album, { AlbumFetchData } from './album.interface';
 import AlbumModel from './album.model';
 import UploadDto from './dto/upload.dto';
 import NoAlbumException from './exception/no-album.exception';
@@ -24,5 +27,17 @@ export default class AlbumService {
     const album = await AlbumModel.getAlbumByUUID(uuid);
     if (!album) throw new NoAlbumException();
     return album;
+  }
+
+  public async fetch(korean: boolean, single: boolean): Promise<AlbumFetchData[]> {
+    const result: AlbumFetchData[] = [];
+    const albums = await AlbumModel.find({ isSingle: single, isKorean: korean });
+    for (const album of albums) {
+      const musicData: Deserialize<Music>[] = [];
+      const musics = await MusicModel.find({ album_id: album.uuid });
+      musicData.push(...musics.map(music => music.deserialize()));
+      result.push({ album: album.deserialize(), musics: musicData });
+    }
+    return result;
   }
 }

@@ -4,7 +4,7 @@ import AsyncHelper from '../../utils/async-helper.util';
 import DtoHelper from '../../utils/dto-helper.util';
 import { TypedRequest, TypedResponse } from '../../utils/express.type';
 import ValidateHelper from '../../utils/validate-helper.util';
-import Album from './album.interface';
+import Album, { AlbumFetchData } from './album.interface';
 import AlbumService from './album.service';
 import UploadDto from './dto/upload.dto';
 import ViewDto from './dto/view.dto';
@@ -16,6 +16,7 @@ export default class AlbumController extends Controller {
   protected mountRoutes(): void {
     this.router.post('/upload', ValidateHelper(UploadDto), AsyncHelper(this.upload.bind(this)));
     this.router.post('/view', ValidateHelper(ViewDto), AsyncHelper(this.view.bind(this)));
+    this.router.post('/fetch', AsyncHelper(this.fetch.bind(this)));
   }
 
   private async upload(
@@ -32,5 +33,10 @@ export default class AlbumController extends Controller {
   ): Promise<void> {
     const album = await this.albumService.view(req.body.uuid);
     res.json(album.deserialize());
+  }
+
+  private async fetch(req: TypedRequest<any>, res: TypedResponse<AlbumFetchData[]>): Promise<void> {
+    const data = await this.albumService.fetch(true, false);
+    res.json(data);
   }
 }
