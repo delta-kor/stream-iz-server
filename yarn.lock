@@ -208,10 +208,10 @@ class-validator@^0.13.1:
     libphonenumber-js "^1.9.7"
     validator "^13.5.2"
 
-connect-mongo@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-4.2.2.tgz#2fe82250b34c29c31cdf4f379b6ded2375bae8b8"
-  integrity sha512-HueEAPZoeGpzbfLTHBXSs6SwNZv275nz3Kxyak5aT+RlBz8/ljTw0wO1f3NwjWxkJdBd12mVb7/aYopS7tzq4A==
+connect-mongo@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-4.3.1.tgz#9974cf13dda1a515f06fe97c7c0c9f161882aea9"
+  integrity sha512-R8X9vQ3ahHLd9ZYzjKbtfnGdW/ReY6EmjJv1IOKaT3v9ZJQdV1cE6peDBoNW4Pd2XmNqOVCywvy2ov2a5/Cnsg==
   dependencies:
     debug "^4.3.1"
     kruptein "^3.0.0"
