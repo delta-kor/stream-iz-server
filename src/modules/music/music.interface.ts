@@ -7,6 +7,7 @@ export interface Lyrics {
 
 export default interface Music extends Document {
   uuid: string;
+  index: number;
   title: string;
   album_id: string;
   genie_id: string;

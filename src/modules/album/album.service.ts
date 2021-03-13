@@ -31,13 +31,17 @@ export default class AlbumService {
 
   public async fetch(korean: boolean, single: boolean): Promise<AlbumFetchData[]> {
     const result: AlbumFetchData[] = [];
-    const albums = await AlbumModel.find({ isSingle: single, isKorean: korean });
+    const albums = await AlbumModel.find({ isSingle: single, isKorean: korean }).sort({
+      release: 1,
+    });
+
     for (const album of albums) {
       const musicData: Deserialize<Music>[] = [];
-      const musics = await MusicModel.find({ album_id: album.uuid });
+      const musics = await MusicModel.find({ album_id: album.uuid }).sort({ index: 1 });
       musicData.push(...musics.map(music => music.deserialize()));
       result.push({ album: album.deserialize(), musics: musicData });
     }
+
     return result;
   }
 }

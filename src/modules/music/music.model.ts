@@ -10,6 +10,7 @@ export interface MusicModel extends Model<Music> {
 export const MusicSchema = new Schema<Music>({
   uuid: { type: String, required: true, unique: true, default: () => uuid(16) },
   title: { type: String, required: true },
+  index: { type: Number, required: true },
   album_id: { type: String, required: true },
   genie_id: { type: String, required: true },
   yt_id: { type: String, required: true },
@@ -28,6 +29,7 @@ MusicSchema.method('deserialize', function (this: Music): Deserialize<Music> {
   return {
     uuid: this.uuid,
     title: this.title,
+    index: this.index,
     album_id: this.album_id,
     isTitle: this.isTitle,
     lyrics: this.lyrics,
