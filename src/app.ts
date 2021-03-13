@@ -7,6 +7,7 @@ import passport from 'passport';
 import HttpException from './exceptions/http.exception';
 import NotFoundException from './exceptions/not-found.exception';
 import Controller from './types/controller.class';
+import OpenGraph from './utils/open-graph.util';
 
 export default class App {
   private readonly port: number;
@@ -52,6 +53,8 @@ export default class App {
 
     this.app.use(passport.initialize());
     this.app.use(passport.session());
+
+    this.app.use(OpenGraph);
   }
 
   private mountControllers(controllers: Controller[]): void {
