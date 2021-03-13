@@ -36,6 +36,8 @@ export default class App {
   }
 
   private mountMiddlewares(): void {
+    this.app.set('json spaces', 2);
+
     this.app.use(cors({ origin: 'http://lt2.kr' }));
     this.app.use(json());
     this.app.use(
