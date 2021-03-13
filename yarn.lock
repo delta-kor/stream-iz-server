@@ -75,10 +75,10 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^14.14.31":
-  version "14.14.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
-  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
+"@types/node@*", "@types/node@^14.14.33":
+  version "14.14.33"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.33.tgz#9e4f8c64345522e4e8ce77b334a8aaa64e2b6c78"
+  integrity sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==
 
 "@types/passport@^1.0.6":
   version "1.0.6"
@@ -208,10 +208,10 @@ class-validator@^0.13.1:
     libphonenumber-js "^1.9.7"
     validator "^13.5.2"
 
-connect-mongo@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-4.2.2.tgz#2fe82250b34c29c31cdf4f379b6ded2375bae8b8"
-  integrity sha512-HueEAPZoeGpzbfLTHBXSs6SwNZv275nz3Kxyak5aT+RlBz8/ljTw0wO1f3NwjWxkJdBd12mVb7/aYopS7tzq4A==
+connect-mongo@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-4.4.0.tgz#08b3deaadcd2b27c9f154784f8ff697d1ca3681b"
+  integrity sha512-TTv9SUeLazm7eAvrzDfcIbiRcgeK8Dhif6XLDxnL41S3/1+EtFUgdI+kx6lcZtEdobMY/ehLWtJ6+WTXtsQDvg==
   dependencies:
     debug "^4.3.1"
     kruptein "^3.0.0"
@@ -572,10 +572,10 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@^5.11.19:
-  version "5.11.19"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.11.19.tgz#fb20ee6145f4ca9bd757f87ed3ae9e13e92effde"
-  integrity sha512-+oMf4XVg+j7ygnALi7K5vWZfKvC9gs9jdN/6Y1GV5OUAc7KQWoa6hzFO7nSj5jMJlhHNvC6tcS2uU7BV5aH8Lg==
+mongoose@^5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.12.0.tgz#5d644a936c208f11467a60e282c5990d67beafb1"
+  integrity sha512-s0Qpgf5lOk3AXtKnE+FA0HZhFKa2hesGVcTmx1wfTQ+7Q7ph0E79B6KUp1ZQERQyCwuE8WQ4wWllEhd7VPkxOg==
   dependencies:
     "@types/mongodb" "^3.5.27"
     bson "^1.1.4"
