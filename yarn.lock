@@ -675,10 +675,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10=
 
-prettier-plugin-organize-imports@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-1.1.1.tgz#7f1ac1a13d4d1752dc16881894dde1c10ccbf3c0"
-  integrity sha512-rFA1lnek1FYkMGthm4xBKME41qUKItTovuo24bCGZu/Vu1n3gW71UPLAkIdwewwkZCe29gRVweSOPXvAdckFuw==
+prettier-plugin-organize-imports@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-2.0.0.tgz#5c79ff14d67cb6279dcce69276bd60caf79f9a8a"
+  integrity sha512-jPSE5sqFAu+lyKqwcN4zlSHaZmI6/3sJ2F+BkKn7iGCwNdPba1FPUJrx5bPzWnGyrQwGKQZYCuHgVQlCzohing==
 
 prettier@^2.2.1:
   version "2.2.1"
