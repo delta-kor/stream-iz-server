@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@types/apicache@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@types/apicache/-/apicache-1.2.2.tgz#b820659b1d95e66ec0e71dcd0317e9d30f0c154b"
-  integrity sha512-+rjhMdbx7m7pKnNiQCSiKE21mGmMzsfCU871h5BCj4guhAj423j61Dq0Yrr9CnLiDwUhSKtkXWudr9SQE0/IoA==
+"@types/apicache@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@types/apicache/-/apicache-1.2.3.tgz#26aadb5f0a4f55c1581378324d5174451d450046"
+  integrity sha512-vGFyO0KZ/E33jznPywo30GTJnKTUfCF50hSQoD46oZ9joIifON9/cW78VJvYUc1upqhJpzKZlZuIPBy6VKOH/w==
   dependencies:
     "@types/redis" "*"
 
