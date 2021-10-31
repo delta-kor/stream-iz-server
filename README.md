@@ -1,2 +1,2 @@
 # stream-iz-server
-STREAM*IZ backend server (IZ*ONE) #WithYouIZONE
+STREAM*IZ backend server (IZ*ONE)
