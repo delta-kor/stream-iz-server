@@ -65,6 +65,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.13.tgz#5ed7ed7c662948335fcad6c412bb42d99ea754e3"
   integrity sha512-Y86MAxASe25hNzlDbsviXl8jQHb0RDvKt4c40ZJQ1Don0AAL0STLZSs4N+6gLEO55pedy7r2cLwS+ZDxPm/2Bw==
 
+"@types/node@< 17.0.6":
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.5.tgz#57ca67ec4e57ad9e4ef5a6bab48a15387a1c83e0"
+  integrity sha512-w3mrvNXLeDYV1GKTZorGJQivK6XLCoGwpnyJFbJVK/aTBQUxOCaa/GlFAAN3OTDFcb7h5tiFG+YXCO2By+riZw==
+
 "@types/passport@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.7.tgz#85892f14932168158c86aecafd06b12f5439467a"
@@ -448,10 +453,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-kareem@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
-  integrity sha512-STHz9P7X2L4Kwn72fA4rGyqyXdmrMSdxqHx9IXon/FXluXieaFA6KJ2upcHAHxQPQ0LeM/OjLrhFxifHewOALQ==
+kareem@2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.3.tgz#a4432d7965a5bb06fc2b4eeae71317344c9a756a"
+  integrity sha512-uESCXM2KdtOQ8LOvKyTUXEeg0MkYp4wGglTIpGcYHvjJcS5sn2Wkfrfit8m4xSbaNDAw2KdI9elgkOxZbrFYbg==
 
 kruptein@^3.0.0:
   version "3.0.0"
@@ -555,34 +560,32 @@ mongodb@4.2.2:
   optionalDependencies:
     saslprep "^1.0.3"
 
-mongoose@^6.1.3:
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.1.3.tgz#9534b39ecbb7a6a9e1b9108defb1345064080416"
-  integrity sha512-EK3IBmQcIZEhnX3HQYge82hF0ukAnrxnJovBUFwAEkoe3SZ3VJb2k1eMF4MOKEo5mF/h3auxzKJhItaXc3dfmg==
+mongoose@^6.1.10:
+  version "6.1.10"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.1.10.tgz#ad2131fe92d7397897b3fede5fccb251ac2806ca"
+  integrity sha512-OELTPFun6+UHv+A7Fvig8bdOWFXcuD1nPeU86lsnIBadGbwduJAGKmCYDGIS6bt9oQtyUayHlndfVgzQF3AaUA==
   dependencies:
+    "@types/node" "< 17.0.6"
     bson "^4.2.2"
-    kareem "2.3.2"
+    kareem "2.3.3"
     mongodb "4.2.2"
     mpath "0.8.4"
-    mquery "4.0.0"
+    mquery "4.0.2"
     ms "2.1.2"
     regexp-clone "1.0.0"
     sift "13.5.2"
-    sliced "1.0.1"
 
 mpath@0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/mpath/-/mpath-0.8.4.tgz#6b566d9581621d9e931dd3b142ed3618e7599313"
   integrity sha512-DTxNZomBcTWlrMW76jy1wvV37X/cNNxPW1y2Jzd4DZkAaC5ZGsm8bfGfNOthcDuRJujXLqiuS6o3Tpy0JEoh7g==
 
-mquery@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/mquery/-/mquery-4.0.0.tgz#6c62160ad25289e99e0840907757cdfd62bde775"
-  integrity sha512-nGjm89lHja+T/b8cybAby6H0YgA4qYC/lx6UlwvHGqvTq8bDaNeCwl1sY8uRELrNbVWJzIihxVd+vphGGn1vBw==
+mquery@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/mquery/-/mquery-4.0.2.tgz#a13add5ecd7c2e5a67e0f814b3c7acdfb6772804"
+  integrity sha512-oAVF0Nil1mT3rxty6Zln4YiD6x6QsUWYz927jZzjMxOK2aqmhEz5JQ7xmrKK7xRFA2dwV+YaOpKU/S+vfNqKxA==
   dependencies:
     debug "4.x"
-    regexp-clone "^1.0.0"
-    sliced "1.0.1"
 
 ms@2.0.0:
   version "2.0.0"
@@ -721,7 +724,7 @@ raw-body@2.4.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-regexp-clone@1.0.0, regexp-clone@^1.0.0:
+regexp-clone@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/regexp-clone/-/regexp-clone-1.0.0.tgz#222db967623277056260b992626354a04ce9bf63"
   integrity sha512-TuAasHQNamyyJ2hb97IuBEif4qBHGjPHBS64sZwytpLEqtBQ1gPJTnOaQ6qmpET16cK14kkjbazl6+p0RRv0yw==
@@ -793,11 +796,6 @@ sift@13.5.2:
   version "13.5.2"
   resolved "https://registry.yarnpkg.com/sift/-/sift-13.5.2.tgz#24a715e13c617b086166cd04917d204a591c9da6"
   integrity sha512-+gxdEOMA2J+AI+fVsCqeNn7Tgx3M9ZN9jdi95939l1IJ8cZsqS8sqpJyOkic2SJk+1+98Uwryt/gL6XDaV+UZA==
-
-sliced@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
-  integrity sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
 
 sparse-bitfield@^3.0.3:
   version "3.0.3"
