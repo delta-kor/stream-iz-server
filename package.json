@@ -31,7 +31,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-session": "^1.17.2",
-    "mongoose": "^6.2.8",
+    "mongoose": "^6.2.9",
     "passport": "^0.5.2",
     "prettier-plugin-organize-imports": "^2.3.4"
   },
