@@ -1,2 +1,2 @@
 # stream-iz-server
-STREAM\*IZ api backend server (IZ\*ONE)
+STREAM\*IZ API backend server (IZ\*ONE)
