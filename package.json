@@ -43,7 +43,7 @@
     "@types/node": "^18.16.3",
     "@types/passport": "^1.0.12",
     "prettier": "^2.8.8",
-    "tsc-watch": "^6.0.0",
+    "tsc-watch": "^6.0.4",
     "typescript": "^5.0.4"
   }
 }
