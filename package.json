@@ -33,7 +33,7 @@
     "express-session": "^1.17.3",
     "mongoose": "^7.3.4",
     "passport": "^0.6.0",
-    "prettier-plugin-organize-imports": "^3.2.2"
+    "prettier-plugin-organize-imports": "^3.2.3"
   },
   "devDependencies": {
     "@types/apicache": "^1.6.2",
