@@ -39,7 +39,7 @@
     "@types/apicache": "^1.6.3",
     "@types/cors": "^2.8.14",
     "@types/express": "^4.17.20",
-    "@types/express-session": "^1.17.8",
+    "@types/express-session": "^1.17.9",
     "@types/node": "^20.8.6",
     "@types/passport": "^1.0.13",
     "prettier": "^3.0.3",
