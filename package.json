@@ -42,7 +42,7 @@
     "@types/express-session": "^1.18.0",
     "@types/node": "^20.14.2",
     "@types/passport": "^1.0.16",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.1",
     "tsc-watch": "^6.2.0",
     "typescript": "^5.4.5"
   }
