@@ -9,10 +9,10 @@
   dependencies:
     sparse-bitfield "^3.0.3"
 
-"@types/apicache@^1.6.6":
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/@types/apicache/-/apicache-1.6.6.tgz#ec6792d51568cb98c306161b2bd534bea6adad24"
-  integrity sha512-RLeWpWG8QmXS2DshAMIm3HAtmUivFTSzdppppQgvNvbPYfi4871Ec4cXGySAlC9qqmciAZSVCWZPKAwNKwGATA==
+"@types/apicache@^1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@types/apicache/-/apicache-1.6.7.tgz#c5b27420ed279b58c53b0b15fd2ddeefe55ba844"
+  integrity sha512-V2RIIUE0ETIQoMh79hE30+PVL+M5ulvYTZowbLz0h1nDHPucpIcYfMnmfbA24QshkFYCWlaI+7aCa7NwauZsvQ==
   dependencies:
     "@types/express" "*"
     "@types/redis" "^2.8.0"
