@@ -44,6 +44,6 @@
     "@types/passport": "^1.0.17",
     "prettier": "^3.4.2",
     "tsc-watch": "^6.2.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   }
 }
