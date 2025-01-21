@@ -1,2 +1,2 @@
 # stream-iz-server
-STREAM\*IZ Server
+STREAM\*IZ Api Server
