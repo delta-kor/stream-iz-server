@@ -40,7 +40,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/express-session": "^1.18.1",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "@types/passport": "^1.0.17",
     "prettier": "^3.5.3",
     "tsc-watch": "^6.2.1",
