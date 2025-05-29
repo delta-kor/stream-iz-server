@@ -1003,10 +1003,10 @@ tr46@^4.1.1:
   dependencies:
     punycode "^2.3.0"
 
-tsc-watch@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-7.0.0.tgz#fcf774d355d83ffae1da3f489a66efafa98d4cf3"
-  integrity sha512-Y1O0yB9gt7hnJ1hJ2WUcx/T898niAI1w8ZZA/tmbFyRawF5SiGbwCv8DX+Zwhcmt3dyO6PvmIF6R/GNEGyWIvg==
+tsc-watch@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-7.1.1.tgz#c2aaf1719b79d63ef04ab7e176113fa715fd4eb7"
+  integrity sha512-r6t37Dkk4vK44HwxOe+OzjpE/gDamZAwqXhtcAJD/hPVblcjJK45NxbK0HcDASXG0U4pEnCh640JZbeDVSC6yA==
   dependencies:
     cross-spawn "^7.0.6"
     node-cleanup "^2.1.2"
