@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/apicache": "^1.6.8",
     "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.4",
+    "@types/express": "^5.0.5",
     "@types/express-session": "^1.18.2",
     "@types/node": "^24.9.1",
     "@types/passport": "^1.0.17",
