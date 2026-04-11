@@ -28,7 +28,7 @@
     "class-validator": "^0.15.1",
     "connect-mongo": "^4.5.0",
     "cors": "^2.8.6",
-    "dotenv": "^17.4.0",
+    "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "express-session": "^1.19.0",
     "mongoose": "^9.4.1",
